@@ -33,6 +33,7 @@ class App extends Component {
           <Switch>
             <Route path="/register" components={RegisterForm} />
             <Route path="/login" components={LoginForm} />
+            <Route path="/logout" components={Logout} />
             <Route path="/movies/:id" components={MovieForm} />
             <Route path="/movies" component={Movies} />
             <Route path="/customers" component={Customers} />
