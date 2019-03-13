@@ -2,6 +2,7 @@ import http from "./httpService";
 import { apiURL } from "../config.json";
 
 import jwtDecode from "jwt-decode";
+
 const apiEndpoint = apiURL + "/movies";
 const tokenKey = "token";
 
@@ -27,9 +28,14 @@ export function loginWithJwt(jwt) {
   localStorage.setItem(tokenKey, jwt);
 }
 
+export function getJwt() {
+  return localStorage.getItem(tokenKey);
+}
+
 export default {
   login,
   logout,
   loginWithJwt,
-  getCurrentUser
+  getCurrentUser,
+  getJwt
 };
