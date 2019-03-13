@@ -8,3 +8,15 @@ export function getMovies() {
 export function deleteMovies() {
   http.delete(apiEndPoint + "/" + movieId);
 }
+
+export function getMovies(movieId){
+    return http.get(apiEndPoint + '/' + movieId)
+}
+
+export function deleteMovie(movieId){
+    return http.delete(apiEndPoint + '/' + movieId)
+}
+
+export function saveMovie(movieId){
+    
+}
