@@ -1,1 +1,1 @@
-Vidly is a movie rental shop being developed in React.js.
+Vidly is a movie rental site being developed in MERN stack.
