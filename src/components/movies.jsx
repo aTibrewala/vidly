@@ -91,7 +91,7 @@ class Movies extends Component {
   render() {
     const { length: count } = this.state.movies;
     const { pageSize, currentPage, sortColumn } = this.state;
-
+    const { user } = this.props;
     if (count === 0) return <p>There are no movies in database.</p>;
 
     const { totalCount, data: movies } = this.getPagedData();
@@ -104,6 +104,7 @@ class Movies extends Component {
             onItemSelect={this.handleGenreSelect}
           />
         </div>
+
         <div className="col">
           <p>Showing {totalCount} movies in the database.</p>
 
